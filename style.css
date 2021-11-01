@@ -1,0 +1,115 @@
+html {
+    font-family: 'Satoshi', sans-serif;
+}
+body {
+    text-align: center;
+    font-family: 'Satoshi', sans-serif;
+    font-weight: 800;
+}
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    background-color: rgba(248, 248, 248,.9);
+    z-index: 2;
+    box-shadow:0 1px 0 rgba(0,0,0,.1),0 1px 2px rgba(0,0,0,.1);
+}
+h1 {
+    font-weight: 100;
+    font-size: 3em;
+    margin: 5px 0;
+    font-family: 'Clash Grotesk', sans-serif;
+}
+p {
+    margin: 0;
+}
+p.label {
+    margin-top: 80px;
+}
+div.eight-ball {
+    position: relative;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    box-shadow:0 1px 0 rgba(99, 15, 255, 0.1),0 1px 2px rgba(99, 15, 255, 0.1);
+    z-index: -2;
+}
+div.answer {
+    background-color: #14006e;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    width: 50%;
+    height: 50%;
+    margin: 25% auto;
+}
+div.blur {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    background-color: #2f00ff;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    width: 50%;
+    height: 50%;
+    margin: 25% auto;
+    filter:blur(45px);
+}
+p#eight {
+    font-size: 5em;
+    margin: 13% auto;
+    color: white;
+}
+p#answer {
+    padding: 25px;
+    color: lightblue;
+    letter-spacing: 2px;
+}
+button ,input {
+    margin: 15px 2.5px;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-family: 'Satoshi', sans-serif;
+    font-weight: 800;
+    letter-spacing: 2px;
+    transition: .1s all;
+}
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+.shake {
+    animation: shake 150ms 10 linear;
+  }
+  @keyframes shake {
+    0% {
+      transform: translate(3px, 0);
+    }
+    50% {
+      transform: translate(-3px, 0);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 337px) {
+    button, input {
+        font-size: 1.1em;
+    }
+}
