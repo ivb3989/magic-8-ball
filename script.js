@@ -18,7 +18,7 @@ document.body.innerHTML = `
       </div>
     </div>
   </div>
-  <a href="https://ivb3989.github.io/-Wn/" class="back">PLAY</a>
+  <a href="https://ivb3989.github.io/-Wn/" class="back">Back</a>
 `;
 let options = [
   "It is certain", "Yes",
